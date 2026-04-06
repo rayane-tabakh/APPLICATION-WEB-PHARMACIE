@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Pharmacien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo"><span>+</span> PharmaGest</div>
+            <ul class="sidebar-links">
+                <li><a href="#" class="active">📊 Tableau de bord</a></li>
+                <li><a href="#">📦 Gestion Stock</a></li>
+                <li><a href="#">🔔 Commandes <span class="badge">5</span></a></li>
+                <li><a href="#">👥 Clients</a></li>
+                <li><a href="index.html">🚪 Déconnexion</a></li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="dash-header">
+                <h2>Bienvenue, <span class="neon-text">Dr. Ahmed</span></h2>
+                <div class="date">Lundi, 06 Avril 2026</div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Ventes du jour</h3>
+                    <p class="price">12.500 DA</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Nouvelles Commandes</h3>
+                    <p class="price">05</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Produits en rupture</h3>
+                    <p class="price" style="color: #ff4d4d;">02</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>Dernières Commandes</h3>
+                <table class="dash-table">
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Médicament</th>
+                            <th>Prix</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mohamed Ali</td>
+                            <td>Doliprane, Vitamine C</td>
+                            <td>1300 DA</td>
+                            <td><span class="status pending">En attente</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sami Amine</td>
+                            <td>Thermomètre</td>
+                            <td>1200 DA</td>
+                            <td><span class="status complete">Livré</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

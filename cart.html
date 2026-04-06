@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGest - Mon Panier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><span>+</span> PharmaGest</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="#" class="active">Panier</a></li>
+        </ul>
+    </nav>
+
+    <div class="cart-section">
+        <h2 class="neon-text">Mon <span style="color: white;">Panier</span></h2>
+        
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <span class="item-emoji">💊</span>
+                    <div class="item-details">
+                        <h3>Doliprane 1000mg</h3>
+                        <p>450 DA</p>
+                    </div>
+                    <div class="quantity-control">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <span class="item-price">450 DA</span>
+                </div>
+
+                <div class="cart-item">
+                    <span class="item-emoji">🧪</span>
+                    <div class="item-details">
+                        <h3>Vitamine C 500</h3>
+                        <p>850 DA</p>
+                    </div>
+                    <div class="quantity-control">
+                        <button>-</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                    <span class="item-price">1700 DA</span>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Résumé</h3>
+                <div class="summary-line">
+                    <span>Sous-total</span>
+                    <span>2150 DA</span>
+                </div>
+                <div class="summary-line">
+                    <span>Livraison</span>
+                    <span>400 DA</span>
+                </div>
+                <hr>
+                <div class="summary-line total">
+                    <span>Total</span>
+                    <span class="price">2550 DA</span>
+                </div>
+                <button class="submit-btn">Confirmer la commande</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

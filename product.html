@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGest - Nos Produits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11h2v3h3v2h-3v3h-2v-3H8v-2h3V9z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">PharmaGest</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="#" class="active">Produits</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" class="cart-icon">🛒 <span class="cart-count">2</span></a>
+        </div>
+    </nav>
+
+    <section class="products-section">
+        <div class="section-header">
+            <h2>Nos <span class="neon-text">Produits</span></h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un médicament...">
+            </div>
+        </div>
+
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-badge">En Stock</div>
+                <div class="product-image-container">
+                    <img src="images/doliprane.png" alt="Doliprane" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>Doliprane 1000mg</h3>
+                    <p class="category">Analgésique</p>
+                    <div class="product-footer">
+                        <span class="price">450 DA</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">En Stock</div>
+                <div class="product-image-container">
+                    <img src="images/vitamine_c.png" alt="Vitamine C" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>Vitamine C 500</h3>
+                    <p class="category">Complément</p>
+                    <div class="product-footer">
+                        <span class="price">850 DA</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge low">Stock Faible</div>
+                <div class="product-image-container">
+                    <img src="images/thermometre.png" alt="Thermomètre" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>Thermomètre Digital</h3>
+                    <p class="category">Matériel</p>
+                    <div class="product-footer">
+                        <span class="price">1200 DA</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">En Stock</div>
+                <div class="product-image-container">
+                    <img src="images/sirop.png" alt="Sirop" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>Sirop Toux Sec</h3>
+                    <p class="category">Sirop</p>
+                    <div class="product-footer">
+                        <span class="price">600 DA</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
