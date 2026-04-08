@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - Pharmacie</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="payment-method">
+            <h3>Mode de Paiement</h3>
+            
+            <div class="option">
+                <input type="radio" name="pay_method" id="on_delivery" value="cash" checked>
+                <label for="on_delivery">Paiement à la réception</label>
+            </div>
+            
+            <div class="option">
+                <input type="radio" name="pay_method" id="online" value="online">
+                <label for="online">Paiement en ligne (CIB / PayPal)</label>
+            </div>
+
+            <div id="card-info" style="display:none;">
+                <h4>Informations de la carte</h4>
+                <input type="text" placeholder="Numéro de carte (16 chiffres)" class="input-field" maxlength="16">
+                <div class="row">
+                    <input type="text" placeholder="MM/YY" class="input-field small">
+                    <input type="password" placeholder="CVV" class="input-field small">
+                </div>
+            </div>
+
+            <button class="confirm-btn" onclick="processPayment()">Confirmer la commande</button>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

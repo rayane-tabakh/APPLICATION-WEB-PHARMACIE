@@ -1,0 +1,77 @@
+body {
+    background-color: #050a14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-method {
+    background-color: #0c1a2c; 
+    border: 2px solid #00f2ff; 
+    padding: 30px;
+    border-radius: 20px;
+    width: 380px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+h3, h4 {
+    color: #00f2ff;
+    text-align: center;
+}
+
+.option {
+    background: #112236;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1a2a40;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    border-color: #00f2ff;
+}
+
+.input-field {
+    width: 93%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #09121d;
+    border: 1px solid #1a2a40;
+    color: white;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.small {
+    width: 45%;
+}
+
+.confirm-btn {
+    background-color: #00f2ff;
+    color: #050a14;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    box-shadow: 0 0 15px #00f2ff;
+    transform: scale(1.02);
+}
