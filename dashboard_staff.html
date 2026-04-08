@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGest | Staff Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <div class="app-layout">
+        <header class="navbar-glass">
+            <div class="logo">
+                <i class="bi bi-plus-circle-fill neon-icon"></i> PharmaGest
+            </div>
+            <nav class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#" class="active">Commandes</a>
+                <a href="#">Stock</a>
+            </nav>
+            <div class="staff-profile">
+                <div class="notif-bell">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="pulse-badge">3</span>
+                </div>
+                <button class="btn-connexion">Déconnexion</button>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="welcome-section">
+                <h1>Gestion des <span>Commandes</span></h1>
+                <p>Traitez les flux de commandes et générez les bons de livraison PDF[cite: 99].</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="glass-card">
+                    <span class="badge stock-ok">EN STOCK</span>
+                    <h3>Commandes en cours</h3>
+                    <p class="value-text">14</p>
+                </div>
+                <div class="glass-card">
+                    <span class="badge stock-low">ALERTE CRITIQUE</span>
+                    <h3>Produits Périmés (J-7)</h3>
+                    <p class="value-text text-danger">05</p>
+                </div>
+            </div>
+
+            <section class="glass-card table-wrapper">
+                <div class="search-bar-container">
+                    <input type="text" placeholder="Rechercher une commande ou un patient..." class="search-input">
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Client</th>
+                            <th>Total</th>
+                            <th>Paiement</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="id-neon">#RX-2026</span></td>
+                            <td>tabakh rayane. [cite: 24]</td>
+                            <td>4,500 DA</td>
+                            <td><span class="pay-method">Simulation CIB [cite: 20]</span></td>
+                            <td class="action-buttons">
+                                <button class="btn-valid">VALIDER</button>
+                                <button class="btn-pdf"><i class="bi bi-file-earmark-pdf"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

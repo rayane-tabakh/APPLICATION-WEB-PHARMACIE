@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-dark: #000b18;
+    --neon-cyan: #00d4ff;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #e0f2ff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Éclat de fond inspiré par vos images */
+.background-glow {
+    position: fixed;
+    top: -10%;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.navbar-glass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0, 11, 24, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.logo { font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
+.neon-icon { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); }
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+/* Stats Styles */
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+.badge { font-size: 0.7rem; padding: 4px 10px; border-radius: 50px; font-weight: bold; }
+.stock-ok { background: rgba(0, 212, 255, 0.2); color: var(--neon-cyan); }
+.stock-low { background: rgba(255, 71, 87, 0.2); color: #ff4757; }
+
+/* Table and Input Styles */
+.search-input {
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--neon-cyan);
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.1);
+}
+
+.modern-table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+th { text-align: left; color: var(--neon-cyan); padding-bottom: 15px; }
+td { padding: 20px 0; border-bottom: 1px solid var(--glass-border); }
+
+.btn-valid {
+    background: var(--neon-cyan);
+    color: var(--bg-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--neon-cyan);
+}
+
+.btn-pdf {
+    background: transparent;
+    border: 1px solid var(--text-primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}

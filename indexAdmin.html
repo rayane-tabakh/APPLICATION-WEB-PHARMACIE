@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma Admin | Cyber Interface</title>
+    
+    <link rel="stylesheet" href="styleAdmin.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-capsules"></i>
+                <span>Pharma<span>Gest</span></span>
+            </div>
+            
+            <nav id="main-nav">
+                <a href="#" class="nav-item active" data-page="Dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                <a href="#" class="nav-item" data-page="Users Management"><i class="fa-solid fa-users"></i> Users</a>
+                <a href="#" class="nav-item" data-page="Products Management"><i class="fa-solid fa-pills"></i> Products</a>
+                <a href="#" class="nav-item" data-page="Suppliers"><i class="fa-solid fa-truck-fast"></i> Suppliers</a>
+                <a href="#" class="nav-item alert-nav" data-page="System Alerts"><i class="fa-solid fa-triangle-exclamation"></i> Alerts <span class="badge">3</span></a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1 id="page-title">Dashboard</h1>
+                <div class="user-profile">Admin Portal</div>
+            </header>
+
+            <section class="dashboard-grid">
+                <div class="card stat-card">
+                    <div class="card-title">Total Products</div>
+                    <div class="card-value">1,284</div>
+                </div>
+
+                <div class="card stat-card">
+                    <div class="card-title">Active Users</div>
+                    <div class="card-value">42</div>
+                </div>
+
+                <div class="card alert-card-main">
+                    <div class="card-title">Low Stock Alerts</div>
+                    <div class="alert-item">
+                        <span>Paracetamol 500mg</span>
+                        <span class="stock-count">5 left</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scriptAdmin.js"></script>
+</body>
+</html>
